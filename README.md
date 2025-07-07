@@ -67,22 +67,22 @@ Ambos modelos fueron evaluados mediante métricas de regresión y su desempeño 
 
 | Métrica             | Modelo Sencillo | Modelo Robusto |
 |---------------------|------------------|----------------|
-| MAE                 | 5.12             | 4.78           |
-| RMSE                | 6.84             | 6.21           |
-| Falsos Positivos    | 12               | 8              |
-| Falsos Negativos    | 7                | 5              |
+| MAE                 | 2.66             | 5.18           |
+| RMSE                | 4.15             | 7.46           |
+| Falsos Positivos    | 147              | 46             |
+| Falsos Negativos    | 262              | 296            |
 
-> El modelo robusto logró un mejor desempeño tanto en las métricas de error como en el backtesting, mostrando una curva de capital más estable y menos señales falsas.
+> El modelo sencillo presentó menor error promedio, aunque generó más señales falsas. El modelo robusto fue más conservador, con menos falsas compras pero a costa de omitir muchas oportunidades de compra reales.
 
 ---
 
 ## 🤔 Reflexión Final
 
-Como equipo, tuvimos la oportunidad de construir paso a paso un flujo completo de machine learning para trading financiero con datos de NVIDIA. El proyecto nos permitió reforzar conceptos de series temporales, redes neuronales LSTM y análisis financiero aplicado.
+Como equipo, construimos paso a paso un flujo completo de Machine Learning para trading financiero con datos de NVIDIA. Este proyecto no solo reforzó conocimientos técnicos sobre series temporales y redes LSTM, sino que también nos permitió analizar los desafíos de aplicar modelos predictivos en mercados volátiles.
 
-Uno de los mayores retos fue ajustar la arquitectura LSTM para evitar el sobreajuste en un mercado tan volátil. El uso de técnicas como Dropout y el diseño de un backtesting sencillo fueron claves para evaluar la viabilidad de la estrategia. 
+Uno de los mayores retos fue encontrar un balance entre la precisión del modelo y su capacidad para generar señales de compra/venta efectivas. El modelo sencillo demostró ser más reactivo, capturando tendencias pero generando más falsas alertas. En cambio, el modelo robusto, aunque redujo los falsos positivos, resultó ser demasiado conservador, dejando pasar muchas oportunidades.
 
-Lo que más resaltó fue ver cómo un modelo bien entrenado puede adaptarse a tendencias reales y cómo, incluso frente a Buy & Hold, una estrategia basada en predicciones puede capturar movimientos importantes si se configura adecuadamente.
+Lo que más resaltó fue comprobar cómo incluso un modelo relativamente simple puede detectar patrones útiles en los precios y cómo la implementación de un backtesting permite visualizar las fortalezas y debilidades de cada estrategia. Este aprendizaje nos deja una base sólida para optimizar futuros proyectos de predicción financiera.
 
 ---
 
