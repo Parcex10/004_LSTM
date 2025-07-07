@@ -49,17 +49,41 @@ Ambos modelos fueron evaluados mediante métricas de regresión y su desempeño 
 
 004_LSTM_Trading/
 ├── data/               # Dataset original NVDA_10yr.csv
+
+
 ├── models/             # Modelos entrenados y scaler
+
+
 │   ├── lstm_model_simple.h5
+
+
 │   ├── lstm_model_robust.h5
+
+
 │   └── close_price_scaler.save
+
+
 ├── notebooks/          # Notebook principal
+
+
 │   └── report.ipynb
+
+
 ├── utils/              # Clase TradingLSTM
+
+
 │   └── trading_lstm.py
+
+
 ├── main.py             # Script de entrada
+
+
 ├── README.md           # Este documento
+
+
 └── requirements.txt    # Dependencias
+
+
 
 ---
 
